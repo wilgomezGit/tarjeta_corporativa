@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 0;
+    background-image: url('../imagen/fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-repeat: repeat; /* Repite la imagen en mosaico */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: opacity 0.5s ease;
+}
+
+button:hover {
+    background-color: #9DC7E4;
+    opacity: 0.8;
+}
+
+/* Estilos específicos para los botones de acción */
+.action-button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Centrar los botones de acción */
+.file-actions {
+    text-align: center; /* Centra el contenido del contenedor */
+    margin-top: 20px;
+    margin-bottom: 40px; /* Añade espacio adicional debajo de los botones */
+}
+
+.file-input {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.file-input-label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.file-name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para el contenedor del título */
+.titleContainer {
+    background-color: #e0e8f0; /* Color de fondo consistente */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #ddd; /* Borde gris claro alrededor del contenedor del título */
+}
+
+/* Estilos para el contenedor de resultados */
+.results-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Estilos para el contenedor del input y los botones */
+.file-button-container {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto; /* Centrar el contenedor */
+    border: 1px solid #ddd;
+    width: 50%; /* Ajustar el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el input de archivo */
+.file-input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%; /* Hacer que ocupe todo el ancho disponible */
+    max-width: 100%; /* Evitar que se desborde en pantallas pequeñas */
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.home-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 10px;
+}
+
+.results-container h2 {
+    margin-top: 0;
+}
+
+/* Estilos para el contenedor de salida */
+.output {
+    margin-top: 20px;
+    width: 100%; /* Ancho del 80% del contenedor padre */
+}
+
+/* Estilos para las líneas resaltadas en rojo */
+.highlight {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #f5c6cb;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Añadir espacio adicional hacia abajo */
+
+}

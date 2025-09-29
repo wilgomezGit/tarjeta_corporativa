@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Archivos FIBATCH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="titleContainer">
+        <button class="home-button" onclick="location.href='../index.html'">&laquo Pagina Inicio</button>
+        <h1>Procesador de Archivos FIBATCH</h1>
+    </div>
+
+	<div class="file-button-container">
+	    <input type="file" id="fileInput" class="file-input">
+	    <div class="button-container">
+		        <button class="button" onclick="processFile()">Procesar Archivo</button>
+		        <button class="button" onclick="clearTable()">Limpiar Tabla</button>
+	    </div>
+	 </div>
+
+	<!-- Aquí se mostrará el valor total después de procesar el archivo -->
+	<div id="totalContainer" class="total-container">
+  	  <h2>Total FIBATCH: <span id="totalProcessedValue"></span></h2>
+	</div>
+
+
+    <div class="table-wrapper">
+        <table id="dataTable" class="styled-table">
+
+            <thead>
+                <tr>
+                    <th>Número de Documento</th>
+                    <th>Valor</th>
+                    <th>Comercio</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                <!-- Aquí se insertarán las filas de datos -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalValue"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="button-container">
+        <button class="export-button" onclick="exportToCSV()">Exportar a CSV</button>
+        <button class="export-button" onclick="exportToExcel()">Exportar a Excel</button>
+    </div>
+
+    <!-- Botón pequeño para ir al final de la página (en la esquina superior derecha) -->
+    <button class="scrollButton smallButton topRight" onclick="scrollToBottom()">Ir al Final</button>
+    <!-- Botón pequeño para subir (en la esquina inferior derecha) -->
+    <button class="scrollButton smallButton bottomRight" onclick="scrollToTop()">Subir</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.2/xlsx.full.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <script>
+        // Función para desplazarse hacia el final de la página
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+        // Función para desplazarse hacia arriba de la página
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

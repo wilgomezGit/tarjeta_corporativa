@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador Archivos Personalización</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="titleContainer">
+        <button class="home-button" onclick="location.href='../index.html'">&laquo Pagina Inicio</button>
+        <h1>Validar Archivos Personalización</h1>
+    </div>
+	<div class="file-button-container">
+		<div class="file-actions">
+			<input type="file" id="fileInput" accept=".txt" class="file-input">
+			<button id="processButton" class="action-button">Procesar Archivo</button>
+			<button id="clearButton" class="action-button">Cancelar</button>
+		</div>
+	</div>
+    <div class="results-container">
+        <h2>Resultados de la Validación:</h2>
+        <div id="output" class="output">
+            <!-- Aquí se insertarán los resultados -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

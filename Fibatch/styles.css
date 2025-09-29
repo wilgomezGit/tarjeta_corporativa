@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 0;
+    background-image: url('../imagen/fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-repeat: repeat; /* Repite la imagen en mosaico */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: opacity 0.5s ease;
+}
+
+button:hover {
+    background-color: #9DC7E4;
+    opacity: 0.8;
+}
+
+/* Estilos específicos para los botones de acción */
+.button {
+    background-color: #3498db; /* Color de fondo de los botones */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px; /* Ajusta el margen para separación */
+}
+
+.button:hover {
+    background-color: #9DC7E4;
+    opacity: 0.8;
+}
+
+/* Estilos para los botones de exportación */
+.export-button {
+    background-color: #2ecc71; /* Verde claro */
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.export-button:hover {
+    background-color: #27ae60;
+}
+
+/* Estilos para el contenedor de los botones */
+.button-container {
+    text-align: center; /* Centra los botones */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para el contenedor del título */
+.titleContainer {
+    background-color: #e0e8f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #ddd; /* Borde gris claro alrededor del contenedor del título */
+}
+
+/* Estilos para el contenedor del input y los botones */
+.file-button-container {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto; /* Centrar el contenedor */
+    border: 1px solid #ddd;
+    width: 50%; /* Ajustar el ancho del contenedor */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el input de archivo */
+.file-input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%; /* Hacer que ocupe todo el ancho disponible */
+    max-width: 100%; /* Evitar que se desborde en pantallas pequeñas */
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Estilos para el botón home */
+.home-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin-left: auto;
+    margin-right: auto; /* Centra el contenedor en la página */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Asegúrate de que la tabla ocupe todo el ancho del contenedor */
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los inputs y etiquetas */
+.file-input {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilos para los botones de scroll */
+.scrollButton {
+    position: fixed;
+    background-color: #3498db; /* Color de fondo consistente */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.topRight {
+    top: 20px;
+    right: 20px;
+}
+
+.bottomRight {
+    bottom: 20px;
+    right: 20px;
+}
+
+.smallButton {
+    font-size: 14px;
+}
+
+/* Estilos para el contenedor de salida */
+.output-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin-left: auto;
+    margin-right: auto; /* Centra el contenedor en la página */
+}
+
+/* Estilo para el contenedor que muestra el total procesado */
+.total-container {
+    width: 350px; /* Ajusta el ancho del contenedor */
+    margin: 10px auto;  /* Ajusta el margen (centrado horizontal con 'auto') */
+    padding: 10px;  /* Ajusta el espacio interno */
+    background-color: #3498db;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    text-align: center;  /* Centrar el texto */
+    border-radius: 3px;  /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);  /* Sombra del contenedor */
+}
+
+/* Estilo del texto dentro del contenedor */
+.total-container h2 {
+    margin: 0;
+    font-size: 20px;  /* Tamaño del texto */
+    font-weight: normal;  /* Peso de la fuente */
+}
