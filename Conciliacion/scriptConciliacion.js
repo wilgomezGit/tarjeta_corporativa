@@ -17,7 +17,7 @@ function readExcel(file, fileNumber, callback) {
             if (fileNumber === 1) {
                 // Archivo 1 → B (col 1) y J (col 9)
                 const documento = row[1];
-                const saldo = row[3];
+                const saldo = row[9];
                 if (documento && saldo !== undefined && saldo !== null) {
                     filtered.push({
                         documento: String(documento).trim(),
@@ -27,7 +27,7 @@ function readExcel(file, fileNumber, callback) {
             } else {
                 // Archivo 2 → A (col 0) y B (col 1)
                 const documento = row[0];
-                const saldo = row[3];
+                const saldo = row[2];
                 if (documento && saldo !== undefined && saldo !== null) {
                     filtered.push({
                         documento: String(documento).trim(),
@@ -155,4 +155,5 @@ document.getElementById("clearButton").addEventListener("click", function() {
     dataFile2 = [];
     errores = [];
 });
+
 
