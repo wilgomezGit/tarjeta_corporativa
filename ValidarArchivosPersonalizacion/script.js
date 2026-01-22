@@ -53,10 +53,11 @@ function validateFileContent(content) {
         }
 
         // Validar caracteres especiales y tildes
-        if (specialCharactersRegex.test(line) || tildesRegex.test(line)) {
-            output += `<span class="highlight">Línea ${lineNumber} (Carácter especial o tilde):</span> ${line}\n\n`;
+        if (invalidCharactersRegex.test(line)) {
+            output += `<span class="highlight">Línea ${lineNumber} (Contiene símbolos o caracteres no permitidos):</span> ${line}\n\n`;
             hasErrors = true;
         }
+
     });
 
     // Si no hay errores, mostrar un mensaje de éxito
@@ -67,4 +68,5 @@ function validateFileContent(content) {
     // Mostrar el resultado en el contenedor de salida
     document.getElementById('output').innerHTML = output;
 }
+
 
