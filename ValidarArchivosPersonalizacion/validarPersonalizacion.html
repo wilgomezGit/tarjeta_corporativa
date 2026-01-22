@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="titleContainer">
-        <button class="home-button" onclick="location.href='../index.html'">&laquo Pagina Inicio</button>
+        <button class="home-button" onclick="location.href='../index.html'">
+            &laquo Pagina Inicio
+        </button>
         <h1>Validar Archivos Personalización</h1>
     </div>
-	<div class="file-button-container">
-    <div class="file-actions">
-        <input type="file" id="fileInput" accept=".txt" class="file-input">
-        <div id="fileName" class="file-name"></div>
 
-        <button id="processButton" class="action-button" disabled>
-            Procesar Archivo
-        </button>
-        <button id="clearButton" class="action-button">
-            Cancelar
-        </button>
+    <div class="file-button-container">
+        <div class="file-actions">
+            <input
+                type="file"
+                id="fileInput"
+                accept=".txt"
+                class="file-input"
+            >
+            <button id="processButton" class="action-button">
+                Procesar Archivo
+            </button>
+            <button id="clearButton" class="action-button">
+                Cancelar
+            </button>
+        </div>
     </div>
-</div>
 
     <div class="results-container">
         <h2>Resultados de la Validación:</h2>
@@ -33,6 +40,6 @@
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
-
