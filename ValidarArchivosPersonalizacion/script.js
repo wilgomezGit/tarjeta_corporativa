@@ -36,7 +36,7 @@ document.getElementById('clearButton').addEventListener('click', function() {
 function validateFileContent(content) {
     const lines = content.split('\n');
     const expectedLength = 513; // Longitud esperada para cada línea
-    const specialCharactersRegex = /[!@#$%^&*(),.?":{}|<>¡¿ñÑ\uFFFD]/; // Incluye símbolo de reemplazo
+    const specialCharactersRegex = /[!@#$%^&*(),.?":{}|<>¡¿ñÑ\uFFFD+\-\/]/; // Incluye símbolo de reemplazo
     const tildesRegex = /[áéíóúÁÉÍÓÚ]/;
     let output = 'Los errores se presentan en las siguientes líneas:\n\n';
 
@@ -67,3 +67,4 @@ function validateFileContent(content) {
     // Mostrar el resultado en el contenedor de salida
     document.getElementById('output').innerHTML = output;
 }
+
