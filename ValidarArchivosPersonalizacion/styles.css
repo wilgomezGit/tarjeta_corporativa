@@ -31,18 +31,18 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Estilos específicos para los botones de acción */
+/* Estilos especÃ­ficos para los botones de acciÃ³n */
 .action-button {
     background-color: #3498db;
     color: white;
     border-radius: 5px;
 }
 
-/* Centrar los botones de acción */
+/* Centrar los botones de acciÃ³n */
 .file-actions {
     text-align: center; /* Centra el contenido del contenedor */
     margin-top: 20px;
-    margin-bottom: 40px; /* Añade espacio adicional debajo de los botones */
+    margin-bottom: 40px; /* AÃ±ade espacio adicional debajo de los botones */
 }
 
 .file-input {
@@ -62,7 +62,7 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Estilos para el contenedor del título */
+/* Estilos para el contenedor del tÃ­tulo */
 .titleContainer {
     background-color: #e0e8f0; /* Color de fondo consistente */
     padding: 10px;
@@ -70,7 +70,7 @@ button:hover {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-    border: 1px solid #ddd; /* Borde gris claro alrededor del contenedor del título */
+    border: 1px solid #ddd; /* Borde gris claro alrededor del contenedor del tÃ­tulo */
 }
 
 /* Estilos para el contenedor de resultados */
@@ -94,7 +94,7 @@ button:hover {
     margin: 20px auto; /* Centrar el contenedor */
     border: 1px solid #ddd;
     width: 50%; /* Ajustar el ancho del contenedor */
-    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    max-width: 400px; /* Ancho mÃ¡ximo para pantallas grandes */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -106,7 +106,7 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 90%; /* Hacer que ocupe todo el ancho disponible */
-    max-width: 100%; /* Evitar que se desborde en pantallas pequeñas */
+    max-width: 100%; /* Evitar que se desborde en pantallas pequeÃ±as */
     font-size: 14px;
     background-color: #fff;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -135,7 +135,7 @@ button:hover {
     width: 100%; /* Ancho del 80% del contenedor padre */
 }
 
-/* Estilos para las líneas resaltadas en rojo */
+/* Estilos para las lÃ­neas resaltadas en rojo */
 .highlight {
     background-color: #f8d7da;
     color: #721c24;
@@ -144,6 +144,16 @@ button:hover {
     border: 1px solid #f5c6cb;
     display: block;
     margin-top: 10px;
-    margin-bottom: 10px; /* Añadir espacio adicional hacia abajo */
+    margin-bottom: 10px; /* AÃ±adir espacio adicional hacia abajo */
 
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+
